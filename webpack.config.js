@@ -8,6 +8,15 @@ module.exports = {
         path: __dirname + "/dist",
         filename: "bundle.js"
     },
+    module: {
+        loaders: [
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loaders: ["babel-loader"]
+            }
+        ]
+    },
     plugins: [
         new CopyWebpackPlugin([
             { from: __dirname + '/app/src/index.html', to: __dirname + '/dist/index.html' },

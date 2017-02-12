@@ -1,6 +1,11 @@
-var moduleA = require('./modules/moduleA.js');
-var componentOne = require('./components/componentOne.js');
+import mainMethodA from './modules/moduleA';
+import * as moduleB from './modules/moduleB';
+import mainMethodC from'./components/componentOne.js';
+
+
+
 document.write("Hello World");
 
-moduleA.mainMethod();
-componentOne.mainMethod();
+mainMethodA();
+moduleB.mainMethod();
+mainMethodC();

@@ -1,5 +1,6 @@
 document.write("component one");
-exports.mainMethod = function(){
+
+export default function mainMethod(){
 
     alert("Hello, from Component One");
 

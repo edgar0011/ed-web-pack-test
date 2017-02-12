@@ -1,5 +1,5 @@
 document.write("module A");
-exports.mainMethod = function(){
+export default function mainMethod(){
 
     alert("Hello, from Module A");
 
